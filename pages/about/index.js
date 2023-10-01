@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ParticlesContainer from "../../Components/ParticlesContainer";
 
-
 import {
   FaHtml5,
   FaCss3,
@@ -9,6 +8,8 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
+  FaBootstrap,
+  FaVuejs,
 } from "react-icons/fa";
 
 import {
@@ -16,8 +17,9 @@ import {
   SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
+  SiTypescript,
+  SiTailwindcss,
 } from "react-icons/si";
-
 
 const aboutData = [
   {
@@ -28,11 +30,14 @@ const aboutData = [
         icons: [
           { id: 1, title: <FaHtml5 /> },
           { id: 2, title: <FaCss3 /> },
-          { id: 3, title: <FaJs /> },
-          { id: 4, title: <FaReact /> },
-          { id: 5, title: <SiNextdotjs /> },
-          { id: 6, title: <SiFramer /> },
-          { id: 7, title: <FaWordpress /> },
+          { id: 3, title: <FaBootstrap /> },
+          { id: 4, title: <FaJs /> },
+          { id: 5, title: <FaReact /> },
+          { id: 6, title: <SiNextdotjs /> },
+          { id: 7, title: <SiFramer /> },
+          { id: 8, title: <SiTailwindcss /> },
+          { id: 9, title: <SiTypescript /> },
+          { id: 10, title: <FaVuejs /> },
         ],
       },
       {
@@ -45,33 +50,33 @@ const aboutData = [
       },
     ],
   },
-  {
-    title: "awards",
-    info: [
-      {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
-      },
-    ],
-  },
+  // {
+  //   title: "awards",
+  //   info: [
+  //     {
+  //       title: "Webby Awards - Honoree",
+  //       stage: "2011 - 2012",
+  //     },
+  //     {
+  //       title: "Adobe Design Achievement Awards - Finalist",
+  //       stage: "2009 - 2010",
+  //     },
+  //   ],
+  // },
   {
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Frontend Web developer - Liaison Co.",
+        stage: "2020 - ",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "Digital Marketing Manager - Schützenhof Deli",
+        stage: "2017 - 2020",
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Interior Designer - Salman Shahzaib Ent. (Real Estate)",
+        stage: "2011 - 2016",
       },
     ],
   },
@@ -79,16 +84,32 @@ const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
+        title: "CS50 - X -- Harvard University, Cambridge, MA, USA.",
+        stage: "2023",
+      },
+      {
+        title: "CS50 - Python -- Harvard University, Cambridge, MA, USA.",
+        stage: "2023",
+      },
+      {
+        title: "CS50 - Web -- Harvard University, Cambridge, MA, USA.",
+        stage: "2023",
+      },
+      {
+        title: "Responsive Web Design - freeCodeCamp",
+        stage: "2023",
+      },
+      {
+        title: "JavaScript Algorithms and Data Structures - freeCodeCamp",
+        stage: "2023",
+      },
+      {
+        title: "Frontend Development Libraries - freeCodeCamp",
+        stage: "2023",
+      },
+      {
+        title: "REALSCHULABSCHLUSS - FBISE",
         stage: "2011",
-      },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
       },
     ],
   },
@@ -107,7 +128,6 @@ const About = () => {
   console.log(index);
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
-      
       <Circles />
 
       <motion.div
@@ -227,8 +247,8 @@ const About = () => {
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
                 >
                   <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">--</div>
-                  <div>{item.stage}</div>
+                  <div className="hidden md:flex">-</div>
+                  <div className="text-space">{item.stage}</div>
                   <div className="flex gap-x-4">
                     {item.icons?.map((icon, itemIndex) => {
                       return (
