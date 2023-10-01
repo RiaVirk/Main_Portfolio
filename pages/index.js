@@ -28,9 +28,10 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias
-            sapiente culpa, magni ipsam ullam sunt quis cum impedit est
-            incidunt!
+            Having worked as a frontend developer for more than 3 years, I have
+            developed a good understanding of the core technologies and best
+            practices that power modern web development. Proficient in HTML,
+            CSS, Bootstrap, JavaScript, React.js, Next.js & TailwindCSS.
           </motion.p>
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />
@@ -52,13 +53,12 @@ const Home = () => {
 
         <ParticlesContainer />
 
-
         <motion.div
           variants={fadeIn("up", 0.7)}
           initial="hidden"
           animate="show"
           exit="hidden"
-          transition={{duration: 1, ease: easeInOut}}
+          transition={{ duration: 1, ease: easeInOut }}
           className="max-w-[400] max-h-[500] mix-blend-color-dodge absolute -bottom-32 lg:bottom-16 lg:right-[8%]"
         >
           <Avatar />
