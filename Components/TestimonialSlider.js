@@ -1,25 +1,25 @@
 // testimonial data
 const testimonialData = [
   {
-    image: "/t-avt-1.png",
+    image: "/Ali_Mehfooz.jpg",
     name: "Ali Mehfooz",
     position: "HR Manager - Liaison Co",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Not only was Maria work on-time and to spec, she pays attention to improve the aesthetics of the site as well as the functionality. Throughout the entire process she is responsive, and willing to work through issues as they arise. It’s obvious she takes tremendous pride in his work, and I wouldn’t hesitate to recommend her.",
   },
   {
-    image: "/t-avt-2.png",
+    image: "/t-avt-22.png",
     name: "Frau Kalz - Schützenhof Deli",
     position: "Founder & General Manager",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "I always found Maria hardworking and valuable member of the team.",
   },
   {
-    image: "/t-avt-3.png",
-    name: "ABC - Salman Shahzaib Enterprises",
+    image: "/Hassan_Raza.jpg",
+    name: "Hassan Raza - Salman Shahzaib Enterprises",
     position: "Architect & Team Memeber",
     message:
-      "Lorm ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Maria Virk is a brilliant and sharp minded personality. I have the fortune of working with Maria on a very regular basis. Every single project is done in a timely fashion and is delivered exactly as is outlined.",
   },
 ];
 

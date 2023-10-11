@@ -14,33 +14,33 @@ const workSlides = {
           link: "https://mv-dinner-basic.netlify.app/",
         },
         {
-          title: "title",
-          path: "/thumb3.jpg",
+          title: "New Project Soon",
+          path: "/New_Project_Soon.png",
         },
         {
-          title: "title",
-          path: "/thumb4.jpg",
+          title: "New Project Soon",
+          path: "/New_Project_Soon.png",
         },
       ],
     },
     {
       images: [
-        // {
-        //   title: "title",
-        //   path: "/thumb41.jpg",
-        // },
-        // {
-        //   title: "title",
-        //   path: "/thumb11.jpg",
-        // },
-        // {
-        //   title: "title",
-        //   path: "/thumb21.jpg",
-        // },
-        // {
-        //   title: "title",
-        //   path: "/thumb31.jpg",
-        // },
+        {
+          title: "New Project Soon",
+          path: "/New_Project_Soon.png",
+        },
+        {
+          title: "New Project Soon",
+          path: "/New_Project_Soon.png",
+        },
+        {
+          title: "New Project Soon",
+          path: "/New_Project_Soon.png",
+        },
+        {
+          title: "New Project Soon",
+          path: "/New_Project_Soon.png",
+        },
       ],
     },
   ],
@@ -64,12 +64,12 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[280px] sm:h-[480px]"
+      className="h-[320px] sm:h-[520px]"
     >
       {workSlides.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
+            <div className="grid grid-cols-2 grid-rows-2 gap-6 cursor-pointer">
               {slide.images.map((image, index) => {
                 return (
                   <div

@@ -1,4 +1,3 @@
-
 import WorkSlider from "../../Components/WorkSlider";
 import Bulb from "../../Components/Bulb";
 import Circles from "../../Components/Circles";
@@ -29,9 +28,8 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              quo blanditiis vel consequuntur eius quasi magni ipsa laboriosam
-              doloremque labore?
+              Work is the only thing that gives substance to life. <br />{" "}
+              <span className="text-space">Albert Einstein</span>
             </motion.p>
           </div>
 
