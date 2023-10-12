@@ -127,7 +127,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <div className="h-full bg-primary/30 py-48 text-center xl:text-left overflow-auto">
+    <div className="h-full bg-primary/30 py-48 text-center xl:text-left overflow-x-auto">
       <Circles />
 
       <motion.div
